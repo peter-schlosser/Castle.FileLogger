@@ -4,7 +4,7 @@ var target = Argument("Target", "Default");
 // 1. If command line parameter parameter passed, use that.
 // 2. Otherwise if an Environment variable exists, use that.
 var configuration =
-    HasArgument("Configuration") ? Argument("Configuration") :
+    HasArgument("Configuration") ? Argument<string>("Configuration") :
     EnvironmentVariable("Configuration") != null ? EnvironmentVariable("Configuration") : "Release";
 // The build number to use in the version number of the built NuGet packages.
 // There are multiple ways this value can be passed, this is a common pattern.
