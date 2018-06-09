@@ -56,7 +56,7 @@ Task("Restore")
         var solutions = GetFiles("./*.sln");
         foreach(var solution in solutions)
         {
-			Information("Building solution " + solution);
+            Information("Building solution " + solution);
             DotNetCoreBuild(
                 solution.ToString(),
                 new DotNetCoreBuildSettings()
@@ -75,14 +75,15 @@ Task("Test")
         var projects = GetFiles("./test/**/*.csproj");
         foreach(var project in projects)
         {
-			Information("Testing project " + project);
+            Information("Testing project " + project);
             DotNetCoreTest(
                 project.GetDirectory().FullPath,
                 new DotNetCoreTestSettings()
                 {
-                    ArgumentCustomization = args => args
-                        .Append("-xml")
-                        .Append(artifactsDirectory.Path.CombineWithFilePath(project.GetFilenameWithoutExtension()).FullPath + ".xml"),
+					// broken since 2016-05-18 https://github.com/dotnet/cli/issues/3114
+                    // ArgumentCustomization = args => args
+                    //     .Append("-xml")
+                    //     .Append(artifactsDirectory.Path.CombineWithFilePath(project.GetFilenameWithoutExtension()).FullPath + ".xml"),
                     Configuration = configuration,
                     NoBuild = true
                 });
@@ -95,7 +96,7 @@ Task("Pack")
     .IsDependentOn("Test")
     .Does(() =>
     {
-		var hasTag = (EnvironmentVariable("APPVEYOR_REPO_TAG") != null && EnvironmentVariable("APPVEYOR_REPO_TAG") == "true");
+        var hasTag = (EnvironmentVariable("APPVEYOR_REPO_TAG") != null && EnvironmentVariable("APPVEYOR_REPO_TAG") == "true");
         var revision = hasTag ? null : "beta-" + buildNumber.ToString("D4");
         foreach (var project in GetFiles("./src/**/*.csproj"))
         {
