@@ -1,4 +1,5 @@
 # Castle File Logger
+[![Build status](https://ci.appveyor.com/api/projects/status/4em377frx9dm6lkc?svg=true)](https://ci.appveyor.com/project/peter-schlosser/castle-filelogger)
 
 A simple and lightweight log-to-file provider writing log entries by `Microsoft.Extensions.Logging.ILogger` to disk file for offline analysis.
 
