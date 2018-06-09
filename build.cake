@@ -97,7 +97,7 @@ Task("Pack")
     {
 		var hasTag = (EnvironmentVariable("APPVEYOR_REPO_TAG") != null && EnvironmentVariable("APPVEYOR_REPO_TAG") == "true");
         var revision = hasTag ? null : "beta-" + buildNumber.ToString("D4");
-        foreach (var project in GetFiles("./Source/**/*.csproj"))
+        foreach (var project in GetFiles("./src/**/*.csproj"))
         {
             DotNetCorePack(
                 project.GetDirectory().FullPath,
