@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BF008CD1-1A49-47B4-8E32-5260E2D93585}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B7DF73B7-26B7-4D32-BCCC-EA7A2672797C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{1FB5B799-3924-4B07-A75B-A7077A47F30D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp", "sample\SampleApp\SampleApp.csproj", "{1E62AAE4-056D-4A28-9B37-4907BB5CA9A4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DF5FEAFD-667F-4AF1-8246-A8FEFCE98383} = {DF5FEAFD-667F-4AF1-8246-A8FEFCE98383}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Extensions.Logging.FileLogger", "src\Castle.Extensions.Logging.FileLogger\Castle.Extensions.Logging.FileLogger.csproj", "{DF5FEAFD-667F-4AF1-8246-A8FEFCE98383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAppDI", "sample\SampleAppDI\SampleAppDI.csproj", "{F04F312A-8777-4A46-833F-32C220E013F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.Extensions.Logging.FileLogger.Test", "test\Castle.Extensions.Logging.FileLogger.Test\Castle.Extensions.Logging.FileLogger.Test.csproj", "{54312068-F383-46C8-8FB7-655FD888C7B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E62AAE4-056D-4A28-9B37-4907BB5CA9A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E62AAE4-056D-4A28-9B37-4907BB5CA9A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E62AAE4-056D-4A28-9B37-4907BB5CA9A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E62AAE4-056D-4A28-9B37-4907BB5CA9A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5FEAFD-667F-4AF1-8246-A8FEFCE98383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5FEAFD-667F-4AF1-8246-A8FEFCE98383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5FEAFD-667F-4AF1-8246-A8FEFCE98383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5FEAFD-667F-4AF1-8246-A8FEFCE98383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F04F312A-8777-4A46-833F-32C220E013F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F04F312A-8777-4A46-833F-32C220E013F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F04F312A-8777-4A46-833F-32C220E013F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F04F312A-8777-4A46-833F-32C220E013F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54312068-F383-46C8-8FB7-655FD888C7B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54312068-F383-46C8-8FB7-655FD888C7B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54312068-F383-46C8-8FB7-655FD888C7B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54312068-F383-46C8-8FB7-655FD888C7B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1E62AAE4-056D-4A28-9B37-4907BB5CA9A4} = {1FB5B799-3924-4B07-A75B-A7077A47F30D}
+		{DF5FEAFD-667F-4AF1-8246-A8FEFCE98383} = {BF008CD1-1A49-47B4-8E32-5260E2D93585}
+		{F04F312A-8777-4A46-833F-32C220E013F9} = {1FB5B799-3924-4B07-A75B-A7077A47F30D}
+		{54312068-F383-46C8-8FB7-655FD888C7B5} = {B7DF73B7-26B7-4D32-BCCC-EA7A2672797C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E23978E-822B-41E0-A738-D819D6254BDE}
+	EndGlobalSection
+EndGlobal

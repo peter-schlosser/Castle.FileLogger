@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Authors>Peter Schlosser</Authors>
+    <Company>Peter Schlosser dba Quiet Bay Networks</Company>
+    <Description>A lean File Logger extension to ILoggerFactory.  Implements a simple log-to-file provider allowing one to record log entries by Microsoft.Extensions.Logging.ILoggerFactory to disk file for offline analysis.  Uses native ASP.NET Core Logging Services with minimal coding footprint and package dependancies.</Description>
+    <Copyright>Copyright (c) 2018 Peter Schlosser.  All rights reserved.</Copyright>
+    <PackageReleaseNotes>Initial release of seasoned coding project.</PackageReleaseNotes>
+    <PackageLicenseUrl>http://pschlosser.mit-license.org</PackageLicenseUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/peter-schlosser/nuget/master/castle.ico</PackageIconUrl>
+    <PackageTags>dotnet core ILogger ILoggerFactory AddFile FileLogger</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.1.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,43 @@
+2018-06-08 12:58:09.049144 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using 'C:\Users\Peter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-06-08 12:58:09.437163 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:55260/  
+2018-06-08 12:58:09.507184 [Information] SampleAppDI.MyTestClass: MyTestClass() instantiated.
+2018-06-08 12:58:09.513589 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method SampleAppDI.Controllers.HomeController.Index (SampleAppDI) with arguments ((null)) - ModelState is Valid
+2018-06-08 12:58:09.515900 [Information] SampleAppDI.Controllers.HomeController: Method: HomeController.Index() called.
+2018-06-08 12:58:09.516156 [Information] SampleAppDI.MyTestClass: Method: MyTestClass.Foo() called.
+2018-06-08 12:58:09.516222 [Information] SampleAppDI.Controllers.HomeController: MyTestInstance.Foo() = Hello, world.
+2018-06-08 12:58:11.324542 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor: Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-06-08 12:58:11.608796 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action SampleAppDI.Controllers.HomeController.Index (SampleAppDI) in 2103.4769ms
+2018-06-08 12:58:11.613169 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 2178.6243ms 200 text/html; charset=utf-8
+2018-06-08 12:58:11.620930 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:55260/css/site.css  
+2018-06-08 12:58:11.624605 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:55260/lib/bootstrap/dist/css/bootstrap.css  
+2018-06-08 12:58:11.626054 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\Peter\Documents\Visual Studio 2017\Projects\Castle.Extensions.Logging\sample\SampleAppDI\wwwroot\css\site.css'
+2018-06-08 12:58:11.626054 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\Peter\Documents\Visual Studio 2017\Projects\Castle.Extensions.Logging\sample\SampleAppDI\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+2018-06-08 12:58:11.631805 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 10.938ms 200 text/css
+2018-06-08 12:58:11.637286 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:55260/lib/jquery/dist/jquery.js  
+2018-06-08 12:58:11.637817 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\Peter\Documents\Visual Studio 2017\Projects\Castle.Extensions.Logging\sample\SampleAppDI\wwwroot\lib\jquery\dist\jquery.js'
+2018-06-08 12:58:11.641650 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 17.181ms 200 text/css
+2018-06-08 12:58:11.645142 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 7.8601ms 200 application/javascript
+2018-06-08 12:58:11.666546 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:55260/lib/bootstrap/dist/js/bootstrap.js  
+2018-06-08 12:58:11.667150 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\Peter\Documents\Visual Studio 2017\Projects\Castle.Extensions.Logging\sample\SampleAppDI\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+2018-06-08 12:58:11.668687 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 2.142ms 200 application/javascript
+2018-06-08 12:58:11.695260 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:55260/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA  
+2018-06-08 12:58:11.696131 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\Peter\Documents\Visual Studio 2017\Projects\Castle.Extensions.Logging\sample\SampleAppDI\wwwroot\js\site.js'
+2018-06-08 12:58:11.697216 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 1.877ms 200 application/javascript
+2018-06-08 12:58:11.697960 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:55260/images/banner2.svg  
+2018-06-08 12:58:11.698576 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/images/banner2.svg'. Physical path: 'C:\Users\Peter\Documents\Visual Studio 2017\Projects\Castle.Extensions.Logging\sample\SampleAppDI\wwwroot\images\banner2.svg'
+2018-06-08 12:58:11.698935 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:55260/images/banner3.svg  
+2018-06-08 12:58:11.699172 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 1.2246ms 200 image/svg+xml
+2018-06-08 12:58:11.699250 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/images/banner3.svg'. Physical path: 'C:\Users\Peter\Documents\Visual Studio 2017\Projects\Castle.Extensions.Logging\sample\SampleAppDI\wwwroot\images\banner3.svg'
+2018-06-08 12:58:11.700008 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 1.081ms 200 image/svg+xml
+2018-06-08 12:58:11.701098 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:55260/images/banner1.svg  
+2018-06-08 12:58:11.701450 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/images/banner1.svg'. Physical path: 'C:\Users\Peter\Documents\Visual Studio 2017\Projects\Castle.Extensions.Logging\sample\SampleAppDI\wwwroot\images\banner1.svg'
+2018-06-08 12:58:11.702049 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 0.9028ms 200 image/svg+xml
+2018-06-08 12:58:11.704347 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:55260/images/banner4.svg  
+2018-06-08 12:58:11.704719 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/images/banner4.svg'. Physical path: 'C:\Users\Peter\Documents\Visual Studio 2017\Projects\Castle.Extensions.Logging\sample\SampleAppDI\wwwroot\images\banner4.svg'
+2018-06-08 12:58:11.705306 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 0.9708ms 200 image/svg+xml
+2018-06-08 12:58:11.799244 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:55260/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2  
+2018-06-08 12:58:11.799589 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2'. Physical path: 'C:\Users\Peter\Documents\Visual Studio 2017\Projects\Castle.Extensions.Logging\sample\SampleAppDI\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2'
+2018-06-08 12:58:11.799867 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 0.6426ms 200 font/woff2
+2018-06-08 12:58:11.912384 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:55260/favicon.ico  
+2018-06-08 12:58:11.912731 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Peter\Documents\Visual Studio 2017\Projects\Castle.Extensions.Logging\sample\SampleAppDI\wwwroot\favicon.ico'
+2018-06-08 12:58:11.913121 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 0.7432ms 200 image/x-icon
