@@ -1,11 +1,11 @@
-version: '{build}'
-image: Visual Studio 2017
+version: 1.0.{build}
 pull_requests:
   # Do not increment build number for pull requests
   do_not_increment_build_number: true
 branches:
   only:
   - master
+image: Visual Studio 2017
 nuget:
   # Do not publish NuGet packages for pull requests
   disable_publish_on_pr: true

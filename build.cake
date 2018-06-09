@@ -80,7 +80,7 @@ Task("Test")
                 project.GetDirectory().FullPath,
                 new DotNetCoreTestSettings()
                 {
-					// broken since 2016-05-18 https://github.com/dotnet/cli/issues/3114
+                    // broken since 2016-05-18 https://github.com/dotnet/cli/issues/3114
                     // ArgumentCustomization = args => args
                     //     .Append("-xml")
                     //     .Append(artifactsDirectory.Path.CombineWithFilePath(project.GetFilenameWithoutExtension()).FullPath + ".xml"),
