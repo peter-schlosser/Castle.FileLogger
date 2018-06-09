@@ -16,9 +16,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp", "sample\SampleA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Extensions.Logging.FileLogger", "src\Castle.Extensions.Logging.FileLogger\Castle.Extensions.Logging.FileLogger.csproj", "{DF5FEAFD-667F-4AF1-8246-A8FEFCE98383}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAppDI", "sample\SampleAppDI\SampleAppDI.csproj", "{F04F312A-8777-4A46-833F-32C220E013F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleAppDI", "sample\SampleAppDI\SampleAppDI.csproj", "{F04F312A-8777-4A46-833F-32C220E013F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.Extensions.Logging.FileLogger.Test", "test\Castle.Extensions.Logging.FileLogger.Test\Castle.Extensions.Logging.FileLogger.Test.csproj", "{54312068-F383-46C8-8FB7-655FD888C7B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.Extensions.Logging.FileLogger.Test", "test\Castle.Extensions.Logging.FileLogger.Test\Castle.Extensions.Logging.FileLogger.Test.csproj", "{54312068-F383-46C8-8FB7-655FD888C7B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{35F6FCFF-F6A9-4CE9-852D-C535D9B01625}"
+	ProjectSection(SolutionItems) = preProject
+		cake.config = cake.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
