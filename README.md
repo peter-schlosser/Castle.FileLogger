@@ -1,11 +1,11 @@
 # Castle File Logger
-[![Build status](https://ci.appveyor.com/api/projects/status/4em377frx9dm6lkc?svg=true)](https://ci.appveyor.com/project/peter-schlosser/castle-filelogger)
+[![Build status](https://ci.appveyor.com/api/projects/status/4em377frx9dm6lkc?svg=true)](https://ci.appveyor.com/project/peterschlosser/castle-filelogger)
 
 A simple and lightweight log-to-file provider writing log entries by `Microsoft.Extensions.Logging.ILogger` to disk file for offline analysis.
 
 * Adds the provider using an `ILoggerFactory` extension making integration and configuration quick and easy.
 * Uses existing `Microsoft.Extensions.Logging` references minimizing dependencies and coding footprint.
-* Available as a [NuGet Package](https://www.nuget.org/packages/Castle.FileLogger/) or [C# Class Library](https://github.com/peter-schlosser/Castle.FileLogger/tree/master/src/Castle.Extensions.Logging.FileLogger) for fast and easy integration.
+* Available as a [NuGet Package](https://www.nuget.org/packages/Castle.FileLogger/) or [C# Class Library](https://github.com/peterschlosser/Castle.FileLogger/tree/master/src/Castle.Extensions.Logging.FileLogger) for fast and easy integration.
 * ASP.NET Core MVC Framework friendly.
 * Design and implementation deeply influenced by [`Microsoft.Extensions.Logging.AzureAppServices.BatchingLogger`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.azureappservices?view=aspnetcore-2.1)
 
@@ -13,7 +13,7 @@ A simple and lightweight log-to-file provider writing log entries by `Microsoft.
 
 ## Setup
 
-Begin by installing the [NuGet Package](https://github.com/peter-schlosser/nuget) or add the [C# Class Library](https://github.com/peter-schlosser/nuget) to your project.
+Begin by installing the [NuGet Package](https://github.com/peterschlosser/nuget) or add the [C# Class Library](https://github.com/peterschlosser/nuget) to your project.
 
 Add one line of code to your `Program.cs` file.
 ```csharp
@@ -32,7 +32,7 @@ The sample projects demonstrate the use of logging and `ILogger` within your ASP
 
 ### SampleApp
 
-The [SampleApp](https://github.com/peter-schlosser/Castle.FileLogger/tree/master/sample/SampleApp) ASP.NET Core Web Application Project demonstrates how simple use of the File Logger extension can be.  After adding the library and the the above-mentioned one line of code to `Program.cs`, we add a few more lines to the `HomeController` to demonstrate output of basic log entries.
+The [SampleApp](https://github.com/peterschlosser/Castle.FileLogger/tree/master/sample/SampleApp) ASP.NET Core Web Application Project demonstrates how simple use of the File Logger extension can be.  After adding the library and the the above-mentioned one line of code to `Program.cs`, we add a few more lines to the `HomeController` to demonstrate output of basic log entries.
 
 ```csharp
 namespace SampleApp.Controllers
@@ -56,7 +56,7 @@ Build and run.  Review log entries written to `ILogger` in: `~/Logs/log-YYYYMMDD
 
 ### SampleAppDI
 
-The [SampleAppDI](https://github.com/peter-schlosser/Castle.FileLogger/tree/master/sample/SampleAppDI) ASP.NET Core Web Application Project demonstrates the use of [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) (DI) of the `ILogger` object into third-party classes not derived from `Conroller`.  This is an **advanced** topic for those wishing to use the `ILogger` from [Business Logic](https://en.wikipedia.org/wiki/Multitier_architecture) and [Data Access](https://en.wikipedia.org/wiki/Multitier_architecture) layer classes.
+The [SampleAppDI](https://github.com/peterschlosser/Castle.FileLogger/tree/master/sample/SampleAppDI) ASP.NET Core Web Application Project demonstrates the use of [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) (DI) of the `ILogger` object into third-party classes not derived from `Conroller`.  This is an **advanced** topic for those wishing to use the `ILogger` from [Business Logic](https://en.wikipedia.org/wiki/Multitier_architecture) and [Data Access](https://en.wikipedia.org/wiki/Multitier_architecture) layer classes.
 
 Begin by modeling your class constructor with the desired class object, in this case `ILogger`:
 ```csharp
