@@ -11,6 +11,7 @@
     <PackageIconUrl>https://raw.githubusercontent.com/peter-schlosser/nuget/master/castle.ico</PackageIconUrl>
     <PackageTags>dotnet core ILogger ILoggerFactory AddFile FileLogger</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Product>Castle.FileLogger</Product>
   </PropertyGroup>
 
   <ItemGroup>
