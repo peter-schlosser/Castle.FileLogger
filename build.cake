@@ -21,7 +21,7 @@ var buildNumber =
 // A directory path to an Artifacts directory.
 var artifactsDirectory = Directory("./Artifacts");
 
-Information("Running target " + target + " in configuration " + configuration + "on build " + buildNumber);
+Information("Running target " + target + " in configuration " + configuration + " for build " + buildNumber);
 
 // Deletes the contents of the Artifacts folder if it should contain anything from a previous build.
 Task("Clean")
