@@ -21,7 +21,7 @@ var buildNumber =
 // A directory path to an Artifacts directory.
 var artifactsDirectory = Directory("./Artifacts");
 
-Information("Running target " + target + " in configuration " + configuration "on build " + buildNumber);
+Information("Running target " + target + " in configuration " + configuration + "on build " + buildNumber);
 
 // Deletes the contents of the Artifacts folder if it should contain anything from a previous build.
 Task("Clean")
@@ -54,7 +54,7 @@ Task("Restore")
         //        });
         // }
         var solutions = GetFiles("./*.sln");
-        foreach(var project in solutions)
+        foreach(var solution in solutions)
         {
 			Information("Building solution " + solution);
             DotNetCoreBuild(
