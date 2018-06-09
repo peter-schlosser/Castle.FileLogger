@@ -13,7 +13,7 @@ A simple and lightweight log-to-file provider writing log entries by `Microsoft.
 
 ## Setup
 
-Begin by installing the [NuGet Package](https://www.nuget.org/packages/Castle.FileLogger/) or add the [C# Class Library]((https://github.com/peterschlosser/Castle.FileLogger/tree/master/src/Castle.Extensions.Logging.FileLogger) to your project.
+Begin by installing the [NuGet Package](https://www.nuget.org/packages/Castle.FileLogger/) or add the [C# Class Library](https://github.com/peterschlosser/Castle.FileLogger/tree/master/src/Castle.Extensions.Logging.FileLogger) to your project.
 
 Add one line of code to your `Program.cs` file.
 ```csharp
