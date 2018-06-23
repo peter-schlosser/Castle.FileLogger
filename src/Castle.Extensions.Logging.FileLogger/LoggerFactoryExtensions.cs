@@ -13,14 +13,14 @@ namespace Microsoft.Extensions.Logging
         /// <summary>
         /// Adds the FileLoggerProvider action to the ILoggingBuilder interface.
         /// </summary>
-        /// <example>
+        /// <example><![CDATA[
         /// public static IWebHost BuildWebHost(string[] args) =>
         ///     WebHost.CreateDefaultBuilder(args)
         ///         .ConfigureLogging(logging => logging.AddFile())
         ///         .UseStartup<Startup>()
         ///         .Build();
         /// results in log file named: ~/Logs/log-YYYYMMDD.txt
-        /// </example>
+        /// ]]></example>
         /// <param name="builder">The extension method argument</param>
         public static ILoggingBuilder AddFile(this ILoggingBuilder builder)
         {
@@ -33,14 +33,14 @@ namespace Microsoft.Extensions.Logging
         /// </summary>
         /// <param name="builder">The extension method argument</param>
         /// <param name="filename">Sets the filename prefix of log filenames.</param>
-        /// <example>
+        /// <example><![CDATA[
         /// public static IWebHost BuildWebHost(string[] args) =>
         ///     WebHost.CreateDefaultBuilder(args)
         ///         .ConfigureLogging(logging => logging.AddFile("myapp-"))
         ///         .UseStartup<Startup>()
         ///         .Build();
         /// results in log file named: ~/Logs/myapp-YYYYMMDD.txt
-        /// </example>
+        /// ]]></example>
         public static ILoggingBuilder AddFile(this ILoggingBuilder builder, string filename)
         {
             if (string.IsNullOrWhiteSpace(filename))
@@ -56,7 +56,7 @@ namespace Microsoft.Extensions.Logging
         /// </summary>
         /// <param name="builder">The extension method argument</param>
         /// <param name="configure">Configures the logging options using <see cref="CastleFileLoggerOptions"/>.</param>
-        /// <example>
+        /// <example><![CDATA[
         /// public static IWebHost BuildWebHost(string[] args) =>
         ///     WebHost.CreateDefaultBuilder(args)
         ///         .ConfigureLogging(logging =>
@@ -69,7 +69,7 @@ namespace Microsoft.Extensions.Logging
         ///         .UseStartup<Startup>()
         ///         .Build();
         /// results in log file named: ~/Logs/myapp-YYYYMMDD.txt
-        /// </example>
+        /// ]]></example>
         public static ILoggingBuilder AddFile(this ILoggingBuilder builder, Action<CastleFileLoggerOptions> configure)
         {
             if (configure == null)

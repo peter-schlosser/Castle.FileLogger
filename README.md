@@ -50,6 +50,8 @@ namespace SampleApp.Controllers
             _logger.LogInformation("Method: HomeController.Index() called.");
             return View();
         }
+    }
+}
 ```
 Build and run.  Review log entries written to `ILogger` in: `~/Logs/log-YYYYMMDD.txt`.
 
@@ -66,7 +68,7 @@ namespace SampleAppDI
     /// A class representing Business Logic Layer (BLL) or Data Access Layer (DAL)
     /// methods, properties and functions.
     /// </summary>
-	public class MyTestClass
+    public class MyTestClass
     {
         private readonly ILogger<MyTestClass> _logger;
 
@@ -106,7 +108,8 @@ namespace SampleAppDI.Controllers
             _logger.LogInformation(@"MyTestInstance.Foo() = {0}", _test.Foo());
             return View();
         }
-
+    }
+}
 ```
 
 Finally, register the class to be instantiated using DI in the `ConfigureServices()` method of `Startup.cs`:
